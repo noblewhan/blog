@@ -1,5 +1,11 @@
 Blog::Application.routes.draw do
-  get "welcome/index"
+  
+  root "welcome#index"
+
+  get "sitemap/"=> "sitemap#index"
+  get "bio/"=> "bio#index"
+  get "contact/"=> "contact#index"
+  get "welcome/" => "welcome#index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

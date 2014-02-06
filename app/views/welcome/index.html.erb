@@ -1,2 +1,46 @@
-<h1>Hello world</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<title>Welcome Page </title>
+
+    <!DOCTYPE html>
+<head>
+     <style>
+     body {text-align: center;}
+     body {text-align:center;}
+     
+     body {text-align: center;background: url("https://24.media.tumblr.com/a2ecf79a643d38ea6aff111fe8a96b0b/tumblr_mod4t8jhFl1qf0j15o1_500.jpg");;font-family:Helvetica;    background-size: cover;background-position: center center;background-repeat: no-repeat;}
+     
+
+     p{font-size:20px;}
+     input {border:0;padding: 12px;font-size: 18px;}
+     input[type="submit"] {
+  		background: limegreen;
+  		color: black;
+			}
+     	</style>
+
+        <ul>
+
+<% @my_new.each do |title, url| %>
+<li>    <%= link_to(title, url) %> </li>
+
+<%end%>
+
+
+
+</ul>
+</head>
+     
+     
+     <body>
+        
+     
+    
+     <h2>Welcome to Sikawura </h2>
+     <p>Please leave your email address and we will inform you as soon as we are up and running</p>
+     </body>
+
+
+<input type="email"
+placeholder="Your email address">
+<input type="submit">
+
